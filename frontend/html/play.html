@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRATEGYK - Play the AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chessboard-js@1.0.0/css/chessboard-1.0.0.min.css">
+</head>
+<body>
+    <header>
+        <h1>STRATEGYK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="play.html">Play the AI</a>
+            <a href="self_play.html">Watch Self-Play</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Play the AI</h2>
+        <div class="board-container">
+            <div id="chessboard"></div>
+        </div>
+        <div class="nn-viz">
+            <h3>Neural Network Evaluation</h3>
+            <canvas id="nn-viz-canvas"></canvas>
+        </div>
+        <button onclick="resetBoard()">Reset Board</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chessboard-js@1.0.0/js/chessboard-1.0.0.min.js"></script>
+    <script src="js/chessboard.js"></script>
+    <script src="js/nn_viz.js"></script>
+</body>
+</html>
